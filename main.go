@@ -12,7 +12,7 @@ func main() {
 	blockchain := blockchain.NewBlockchain()
 
 	blockchain.AddBlock(&block.Block{
-		Index:        1,
+		Index:        uint(len(blockchain.Chain)),
 		Timestamp:    time.Now(),
 		Data:         "abc",
 		PreviousHash: "abcbcb",
